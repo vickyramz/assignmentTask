@@ -4,15 +4,20 @@ import { useTheme } from "@react-navigation/native";
 const { height } = Dimensions.get("window");
 //configurable dynmaic themes
 
-const styles = StyleSheet.create({
+const Homestyle = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
     padding: 20,
+    justifyContent: "flex-end",
   },
   buttonStyle: {
-    flex: 1,
+    padding: 20,
+  },
+  coloredButton: {
+    borderRadius: 10,
+    height: 50,
+    justifyContent: "center",
   },
 });
 
-export default styles;
+export default Homestyle;

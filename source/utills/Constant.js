@@ -5,9 +5,6 @@
 
 //Buttons name
 export const NEXT_BUTTON = "Next";
-export const welcomeTitle="welcome"
-export const place_Holder="please Enter your Name"
-
-
-
-
+export const welcomeTitle = "welcome";
+export const HomeTitle = "Home";
+export const place_Holder = "Please Enter your Name";
