@@ -17,6 +17,7 @@ const Homestyle = StyleSheet.create({
     borderRadius: 10,
     height: 50,
     justifyContent: "center",
+    
   },
 });
 

@@ -5,10 +5,10 @@
 /* eslint-disable no-trailing-spaces */
 import React from "react";
 import { View, Text, Button } from "react-native";
-import HomeComponent from "../../../components/Home";
+import PlatformDetails from "../../../components/PlatformDetails";
 import { useTheme } from "@react-navigation/native";
 import { useSelector } from "react-redux";
-const HomeScreen = (props) => {
+const Platform = (props) => {
   const getName = useSelector((state) => state.TitleReducer);
   const { colors } = useTheme();
   React.useLayoutEffect(() => {
@@ -16,7 +16,7 @@ const HomeScreen = (props) => {
       headerStyle: {
         backgroundColor: colors.background,
       },
-      headerTitle: global.const.HomeTitle,
+      headerTitle: global.const.platform,
       headerRight: () => (
         <View style={{ paddingRight: 10 }}>
           <Text style={{ color: colors.text }}>
@@ -26,7 +26,7 @@ const HomeScreen = (props) => {
       ),
     });
   }, []);
-  return <HomeComponent props={props} name={getName} />;
+  return <PlatformDetails props={props} name={getName} />;
 };
 
-export default HomeScreen;
+export default Platform;

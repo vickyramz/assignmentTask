@@ -9,6 +9,7 @@ import { HeaderBackButton } from "@react-navigation/stack";
 import { AppearanceProvider, useColorScheme } from "react-native-appearance";
 import WelcomeScreen from "../containers/views/AuthFlow/WelcomeScreen";
 import HomeScreen from "../containers/views/AuthFlow/HomeScreen";
+import Platform from "../containers/views/AuthFlow/PlatformDetails";
 import { useTheme } from "@react-navigation/native";
 const Stack = createStackNavigator();
 const config = {
@@ -28,6 +29,7 @@ function RootNavigator() {
   const authscreens = {
     Welcome: WelcomeScreen,
     HomeScreen: HomeScreen,
+    Platform: Platform,
   };
   //function for creating stackscreen
   function AuthStack() {
